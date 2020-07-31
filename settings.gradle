@@ -1,0 +1,3 @@
+include ':app'
+include ':stars'
+rootProject.name = "HomePageAnim"
