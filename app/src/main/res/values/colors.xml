@@ -8,4 +8,12 @@
     <color name="star_color_2">#25ADFF</color>
     <color name="star_color_3">#FFC100</color>
     <color name="star_color_4">#FF3800</color>
+
+    <color name="colorHeadBorder1">#ea5e94</color>
+    <color name="colorHeadBorder2">#d5826b</color>
+    <color name="colorHeadBorder3">#87b6d1</color>
+    <color name="colorHeadBorder4">#a274eb</color>
+    <color name="transparent">#2B2B2B</color>
+
+    <color name="white">#FFFFFFFF</color>
 </resources>

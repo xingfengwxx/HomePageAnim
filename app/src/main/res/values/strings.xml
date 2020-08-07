@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HomePageAnim</string>
+    <string name="tag_is_center">tagIsCenter</string>
 </resources>

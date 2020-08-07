@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_night_sky"
+    tools:context=".modleviewer.ModelViewerActivity">
+
+    <com.sofakingforever.stars.AnimatedStarsView
+        android:id="@+id/stars_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:starsView_bigStarThreshold="20dp"
+        app:starsView_maxStarSize="4dp"
+        app:starsView_meteoritesColors="@array/meteorites_colors"
+        app:starsView_meteoritesEnabled="true"
+        app:starsView_meteoritesInterval="1000"
+        app:starsView_minStarSize="1dp"
+        app:starsView_starColors="@array/star_colors_small"
+        app:starsView_starCount="30" />
+
+
+    <com.sofakingforever.stars.AnimatedStarsView
+        android:id="@+id/stars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:starsView_bigStarThreshold="8dp"
+        app:starsView_maxStarSize="16dp"
+        app:starsView_meteoritesEnabled="false"
+        app:starsView_minStarSize="8dp"
+        app:starsView_starColors="@array/star_colors_big"
+        app:starsView_starCount="2" />
+
+    <com.wangxingxing.homepageanim.recycleview.CircleRecyclerView
+        android:id="@+id/crv_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</FrameLayout>

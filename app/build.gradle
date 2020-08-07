@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
+apply from: 'multiple-channel.gradle'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 29
     buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "com.wangxingxing.homepageanim"
         minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 29
+        versionCode 100
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,6 +21,40 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../my.jks')
+            keyAlias  'WangXingxing'
+            storePassword 'wxx123321'
+            keyPassword 'wxx123321'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources false
+            zipAlignEnabled false
+            pseudoLocalesEnabled false
+        }
+        debug{
+            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            pseudoLocalesEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
 }
 
 dependencies {
@@ -36,6 +71,17 @@ dependencies {
 
     implementation 'com.github.hoanganhtuan95ptit:MeteorView:1.0'
 
+    implementation 'com.blankj:utilcodex:1.29.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //Walle
+    implementation 'com.meituan.android.walle:library:1.1.7'
+
     implementation project(':stars')
+
+    implementation project(':engine')
 
 }

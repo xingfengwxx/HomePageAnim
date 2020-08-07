@@ -3,6 +3,7 @@ package com.wangxingxing.homepageanim;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class TestActivity extends AppCompatActivity {
     private MeteorView mMeteorView;
     private Button mButtonTest;
     private Button mButtonStart;
+    private Button mButtonOpenGL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,14 @@ public class TestActivity extends AppCompatActivity {
         });
 
         mButtonTest = findViewById(R.id.btn_test);
+
+        mButtonOpenGL = findViewById(R.id.btn_opengl);
+        mButtonOpenGL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestActivity.this, OpenGLActivity.class));
+            }
+        });
     }
 
     private void btnAnim() {
