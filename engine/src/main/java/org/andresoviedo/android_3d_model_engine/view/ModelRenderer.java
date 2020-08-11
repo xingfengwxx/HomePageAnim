@@ -254,7 +254,10 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
         Log.d(TAG, "onSurfaceCreated. config: "+config);
 
         // Set the background frame color
-        GLES20.glClearColor(backgroundColor[0], backgroundColor[1], backgroundColor[2], backgroundColor[3]);
+        // GLES20.glClearColor(backgroundColor[0], backgroundColor[1], backgroundColor[2], backgroundColor[3]);
+
+        // 设置背景透明
+        GLES20.glClearColor(0,0,0,0);
 
         // Use culling to remove back faces.
         // Don't remove back faces so we can see them

@@ -6,6 +6,9 @@ import android.widget.TextView;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.blankj.utilcode.util.PhoneUtils;
+import com.blankj.utilcode.util.RomUtils;
+
 
 /**
  *  author : 王星星
@@ -46,6 +49,9 @@ public class CircularViewMode implements ItemViewMode {
         //旋转角度
         // ViewCompat.setRotation(v, rot * 0.05f);
         // +1.5 可调整其在屏幕中的位置
+        if (RomUtils.isOppo()) {
+            mCircleOffset = 600;
+        }
         ViewCompat.setTranslationX(v, (float)(-Math.cos(rot * mTranslationRatio * mDegToRad) + 1.4) * mCircleOffset);
 
         float scale = 1.0f - Math.abs(parentHalfHeight - halfHeight - y) * mScalingRatio + 0.3f;

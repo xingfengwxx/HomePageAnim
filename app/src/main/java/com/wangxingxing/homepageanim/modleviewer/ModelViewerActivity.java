@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.blankj.utilcode.util.BarUtils;
+import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.PermissionUtils;
 import com.blankj.utilcode.util.ResourceUtils;
 import com.blankj.utilcode.util.ScreenUtils;
@@ -79,7 +80,7 @@ public class ModelViewerActivity extends Activity implements EventListener {
     private AnimatedStarsView mAnimatedStarsView;
     private FrameLayout mFrameLayoutRoot;
     private CircleRecyclerView mCrvUser;
-    private CircleImageView mImageViewTest;
+    private ImageView mImageViewTest;
 
     private List<UserInfoBean> mData;
     private CircleRecyclerViewAdapter mAdapter;
@@ -101,6 +102,7 @@ public class ModelViewerActivity extends Activity implements EventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_model_viewer);
         //getAssetsModel();
+
 
         initView();
         initData();
@@ -163,10 +165,13 @@ public class ModelViewerActivity extends Activity implements EventListener {
 //        Glide.with(this).load("http://cdn.sbnh.cn/loading.gif").into(mImageViewTest);
 //
 
+        // http://cdn.sbnh.cn/loading-spinner
+
 //        MultiTransformation multiTransformation = new MultiTransformation(new RoundedCornersTransformation(128, 0));
 //        Glide.with(this)
-//                .load("http://cdn.sbnh.cn/loading-spinner")
+//                .load(R.drawable.bg_test)
 //                .apply(RequestOptions.bitmapTransform(multiTransformation))
+//                .centerCrop()
 //                .into(mImageViewTest);
 
     }
@@ -182,7 +187,7 @@ public class ModelViewerActivity extends Activity implements EventListener {
 
     private void loadModel() {
         ContentUtils.provideAssets(this);
-        Uri uri = Uri.parse("assets://" + getPackageName() + "/models/" + "earth.obj");
+        Uri uri = Uri.parse("assets://" + getPackageName() + "/models/" + "earth_new.obj");
         try {
             mURI = new URI(uri.toString());
         } catch (URISyntaxException e) {
@@ -217,9 +222,16 @@ public class ModelViewerActivity extends Activity implements EventListener {
 
         scene.init();
 
-        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(400, 400);
-        int marginLeft = ScreenUtils.getScreenWidth() - 400;
-        int marginTop = ScreenUtils.getScreenHeight() / 2 - 400 + 100;
+        LogUtils.i("ScreenWidth=" + ScreenUtils.getScreenWidth() + ", ScreenHeight=" + ScreenUtils.getScreenHeight());
+        int glWidth = 800;
+        int glHeight = 800;
+        if (ScreenUtils.getScreenWidth() == 720 && ScreenUtils.getScreenHeight() == 1520) {
+            glWidth = 300;
+            glHeight = 300;
+        }
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(glWidth, glHeight);
+        int marginLeft = ScreenUtils.getScreenWidth() - glWidth + 300;
+        int marginTop = ScreenUtils.getScreenHeight() / 2 - glHeight + 300;
         layoutParams.setMargins(marginLeft, marginTop, 0, 0);
         gLView.setLayoutParams(layoutParams);
 
