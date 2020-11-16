@@ -162,7 +162,7 @@ public class ModelViewerActivity extends Activity implements EventListener {
 
 //        Glide.with(this).load("https://image.niwoxuexi.com/blog/content/5c0d4b1972-loading.gif").into(mImageViewTest);
 
-//        Glide.with(this).load("http://cdn.sbnh.cn/loading.gif").into(mImageViewTest);
+        Glide.with(this).load("http://cdn.sbnh.cn/Fjf8TX2VSLVbyIf5r25E584FD3E-6761-4EFE-9D10-1C7FAFCA7D2715983269620000IMG_0023.GIF").into(mImageViewTest);
 //
 
         // http://cdn.sbnh.cn/loading-spinner

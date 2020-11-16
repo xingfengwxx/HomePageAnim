@@ -16,4 +16,14 @@
     <color name="transparent">#2B2B2B</color>
 
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorFF26CEFF">#FF26CEFF</color>
+    <color name="colorFF7379FF">#FF7379FF</color>
+    <color name="colorFFEB8CFF">#FFEB8CFF</color>
+
+    <color name="colorClickButtonLeft">@color/colorFF26CEFF</color>
+    <color name="colorClickButtonCenter">@color/colorFF7379FF</color>
+    <color name="colorClickButtonRight">@color/colorFFEB8CFF</color>
+
+    <color name="colorFFF6F6F7">#FFF6F6F7</color>
 </resources>
