@@ -3,6 +3,7 @@ package com.wangxingxing.homepageanim;
 import android.app.Application;
 
 import com.blankj.utilcode.util.Utils;
+import com.ycbjie.webviewlib.X5WebUtils;
 
 /**
  * author : 王星星
@@ -17,5 +18,6 @@ public class App extends Application {
         super.onCreate();
 
         Utils.init(this);
+        X5WebUtils.init(this);
     }
 }
