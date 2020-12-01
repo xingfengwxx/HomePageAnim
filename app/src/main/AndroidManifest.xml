@@ -26,12 +26,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flex.FlexActivity">
+        <activity android:name=".flex.TagActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".flex.FlexActivity">
+
         </activity>
         <activity android:name=".DanmakuActivity">
 
@@ -45,11 +48,13 @@
         <activity
             android:name=".X5WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".imageviewer.ImageViewerActivity" />
         <activity
