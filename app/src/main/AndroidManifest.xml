@@ -26,14 +26,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConstraintLayoutActivity">
+        <activity android:name=".FrameAnimActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WindowActivity"></activity>
+        <activity android:name=".ConstraintLayoutActivity">
+
+        </activity>
+        <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
         <activity android:name=".DanmakuActivity">
@@ -47,7 +50,7 @@
         </activity>
         <activity
             android:name=".X5WebViewActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name=".imageviewer.ImageViewerActivity" />
         <activity
             android:name=".ScrollingActivity"
@@ -61,8 +64,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".LottieActivity">
-        </activity>
+        <activity android:name=".LottieActivity"></activity>
         <activity android:name=".modleviewer.ModelViewerActivity" />
         <activity android:name=".OpenGLES20Activity" />
         <activity android:name=".OpenGLActivity" />
