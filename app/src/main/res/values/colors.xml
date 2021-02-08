@@ -26,4 +26,6 @@
     <color name="colorClickButtonRight">@color/colorFFEB8CFF</color>
 
     <color name="colorFFF6F6F7">#FFF6F6F7</color>
+
+    <color name="colorFFFAF8F0">#FFFAF8F0</color>
 </resources>
