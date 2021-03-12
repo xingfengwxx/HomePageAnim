@@ -2,6 +2,7 @@ package com.wangxingxing.homepageanim;
 
 import android.app.Application;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.Utils;
 import com.ycbjie.webviewlib.X5WebUtils;
 
@@ -19,5 +20,14 @@ public class App extends Application {
 
         Utils.init(this);
         X5WebUtils.init(this);
+
+        initLog();
+    }
+
+    private void initLog() {
+        LogUtils.getConfig()
+                .setLogSwitch(true)
+                .setGlobalTag("wxx")
+                .setBorderSwitch(true);
     }
 }

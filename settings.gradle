@@ -1,3 +1,4 @@
+include ':animplayer'
 include ':app'
 include ':stars'
 include ':engine'
