@@ -8,6 +8,12 @@ import android.util.Log;
 
 import com.blankj.utilcode.util.LogUtils;
 
+/**
+ *  author : 王星星
+ *  date : 2021/3/29 22:59
+ *  email : 1099420259@qq.com
+ *  description : 
+ */
 public class WindowActivity extends AppCompatActivity {
 
     @Override
