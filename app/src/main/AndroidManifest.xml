@@ -26,8 +26,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LikeAnimActivity"></activity>
-        <activity android:name=".FireAnimActivity"></activity>
+        <activity android:name=".RoundImageActivity">
+
+        </activity>
+        <activity android:name=".LikeAnimActivity" />
+        <activity android:name=".FireAnimActivity" />
         <activity android:name=".FrameAnimActivity" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".WindowActivity" />
