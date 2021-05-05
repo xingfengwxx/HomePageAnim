@@ -1,6 +1,7 @@
 package com.wangxingxing.homepageanim;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.blankj.utilcode.util.ConvertUtils;
@@ -36,10 +37,12 @@ public class ScrollingActivity extends AppCompatActivity {
 
     private AppBarLayout mAppBarLayout;
     private ConstraintLayout mClTitle;
+    private ConstraintLayout mClTopTitle;
 
     private ViewPager mViewPager;
     private TabLayout mTabLayout;
     private List<Fragment> mFragmentList;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +71,8 @@ public class ScrollingActivity extends AppCompatActivity {
         mViewPager = findViewById(R.id.view_pager);
         mAppBarLayout = findViewById(R.id.app_bar);
         mClTitle = findViewById(R.id.cl_title);
+        mClTopTitle = findViewById(R.id.cl_top_title);
+        mToolbar = findViewById(R.id.toolbar);
 
         mFragmentList = new ArrayList<>();
         mFragmentList.add(SubFragment.newInstance());
@@ -87,10 +92,13 @@ public class ScrollingActivity extends AppCompatActivity {
                 if (state == State.EXPANDED) {
                     //展开状态
                     mClTitle.setVisibility(View.GONE);
-
+                    mClTopTitle.setVisibility(View.GONE);
+                    mToolbar.setBackgroundColor(Color.TRANSPARENT);
                 } else if (state == State.COLLAPSED) {
                     //折叠状态
                     mClTitle.setVisibility(View.VISIBLE);
+                    mClTopTitle.setVisibility(View.VISIBLE);
+                    mToolbar.setBackgroundColor(Color.WHITE);
                 } else {
                     //中间状态
 

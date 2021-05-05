@@ -16,6 +16,7 @@
     <color name="transparent">#2B2B2B</color>
 
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
 
     <color name="colorFF26CEFF">#FF26CEFF</color>
     <color name="colorFF7379FF">#FF7379FF</color>
