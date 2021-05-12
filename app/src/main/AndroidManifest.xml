@@ -32,7 +32,13 @@
         <activity android:name=".LikeAnimActivity" />
         <activity android:name=".FireAnimActivity" />
         <activity android:name=".FrameAnimActivity" />
-        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".ConstraintLayoutActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
@@ -53,11 +59,7 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".LottieActivity" >
 
