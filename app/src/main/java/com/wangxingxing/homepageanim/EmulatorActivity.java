@@ -6,9 +6,15 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.DeviceUtils;
+import com.blankj.utilcode.util.GsonUtils;
+import com.blankj.utilcode.util.LogUtils;
+import com.blankj.utilcode.util.TimeUtils;
 import com.lahm.library.EasyProtectorLib;
 import com.lahm.library.EmulatorCheckCallback;
 import com.snail.antifake.jni.EmulatorDetectUtil;
+import com.wangxingxing.homepageanim.bean.CheckEmulatorBean;
+
+import java.text.SimpleDateFormat;
 
 public class EmulatorActivity extends AppCompatActivity {
 
@@ -24,6 +30,8 @@ public class EmulatorActivity extends AppCompatActivity {
         mTvResult = findViewById(R.id.tv_check_emulator_result);
 
         checkEmulator();
+
+        createJson();
     }
 
     private void checkEmulator() {
@@ -46,5 +54,17 @@ public class EmulatorActivity extends AppCompatActivity {
             }
         });
         return isEmulator;
+    }
+
+    private void createJson() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String date = TimeUtils.millis2String(System.currentTimeMillis(), simpleDateFormat);
+
+        CheckEmulatorBean bean = new CheckEmulatorBean();
+        bean.setCheckLevel(CheckEmulatorBean.CHECK_NOT);
+        bean.setDate(date);
+        bean.setVersionCode(1);
+
+        LogUtils.i(GsonUtils.toJson(bean));
     }
 }

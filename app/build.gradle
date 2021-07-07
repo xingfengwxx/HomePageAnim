@@ -81,13 +81,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation 'me.jessyan:autosize:1.2.1'
+//    implementation 'me.jessyan:autosize:1.2.1'
 
     implementation 'com.airbnb.android:lottie:3.4.1'
 
     implementation 'com.github.hoanganhtuan95ptit:MeteorView:1.0'
 
-    implementation 'com.blankj:utilcodex:1.29.0'
+    implementation 'com.blankj:utilcodex:1.30.6'
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 

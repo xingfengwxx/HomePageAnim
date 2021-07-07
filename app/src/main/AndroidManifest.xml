@@ -26,13 +26,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckboxActivity">
-        </activity>
+        <activity android:name=".PopupWindowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CheckboxActivity"></activity>
         <activity android:name=".EmulatorActivity">
-
         </activity>
-
         <activity android:name=".OaidActivity" />
         <activity android:name=".RoundImageActivity" />
         <activity android:name=".LikeAnimActivity" />
@@ -42,15 +45,7 @@
         <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
-        <activity android:name=".DanmakuActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name=".DanmakuActivity"></activity>
         <activity
             android:name=".X5WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
@@ -64,27 +59,13 @@
         <activity android:name=".OpenGLES20Activity" />
         <activity android:name=".OpenGLActivity" />
         <activity android:name=".StarsActivity" />
-        <activity android:name=".TestActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".TestActivity"></activity>
         <activity android:name=".MainActivity" />
 
         <service
             android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
             android:label="dexopt"
             android:process=":dexopt" />
-
-        <meta-data
-            android:name="design_width_in_dp"
-            android:value="375" />
-        <meta-data
-            android:name="design_height_in_dp"
-            android:value="812" />
-
     </application>
 
 </manifest>
