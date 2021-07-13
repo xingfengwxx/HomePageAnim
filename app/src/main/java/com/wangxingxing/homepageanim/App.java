@@ -2,6 +2,7 @@ package com.wangxingxing.homepageanim;
 
 import android.app.Application;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.Utils;
 import com.ycbjie.webviewlib.X5WebUtils;
@@ -22,6 +23,10 @@ public class App extends Application {
         X5WebUtils.init(this);
 
         initLog();
+
+        ARouter.openLog();
+        ARouter.openDebug();
+        ARouter.init(this);
     }
 
     private void initLog() {

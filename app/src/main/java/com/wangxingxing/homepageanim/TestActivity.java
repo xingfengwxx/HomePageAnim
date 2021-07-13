@@ -12,6 +12,7 @@ import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.hoanganhtuan95ptit.library.MeteorView;
 
 import org.jetbrains.annotations.NotNull;
@@ -25,12 +26,15 @@ import java.lang.reflect.Method;
  *  email : 1099420259@qq.com
  *  description : 
  */
+@Route(path = "/test/TestActivity")
 public class TestActivity extends AppCompatActivity {
 
     private MeteorView mMeteorView;
     private Button mButtonTest;
     private Button mButtonStart;
     private Button mButtonOpenGL;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
