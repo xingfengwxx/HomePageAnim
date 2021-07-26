@@ -26,18 +26,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycleview.RecyclerViewActivity">
+        <activity android:name=".ClickAreaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PopupWindowActivity">
+        <activity android:name=".recycleview.RecyclerViewActivity">
 
         </activity>
+        <activity android:name=".PopupWindowActivity"></activity>
         <activity android:name=".CheckboxActivity" />
-        <activity android:name=".EmulatorActivity"></activity>
+        <activity android:name=".EmulatorActivity" />
         <activity android:name=".OaidActivity" />
         <activity android:name=".RoundImageActivity" />
         <activity android:name=".LikeAnimActivity" />
