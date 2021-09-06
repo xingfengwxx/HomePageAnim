@@ -62,7 +62,7 @@ public class LottieActivity extends AppCompatActivity {
     private void playAnim() {
         lav = findViewById(R.id.lav);
         mIvGifGlide = findViewById(R.id.iv_gif_glide);
-        Glide.with(this).load(R.raw.anim_voice).into(mIvGifGlide);
+        Glide.with(this).load(R.drawable.matching_loading_4).into(mIvGifGlide);
 
 //        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
 //        animator.addUpdateListener(animation -> {

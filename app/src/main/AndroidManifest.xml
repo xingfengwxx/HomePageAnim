@@ -26,17 +26,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClickAreaActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".recycleview.RecyclerViewActivity">
+        <activity android:name=".ChipGroupActivity"
+            android:theme="@style/MyChipTheme">
 
         </activity>
-        <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".ClickAreaActivity"></activity>
+        <activity android:name=".recycleview.RecyclerViewActivity"></activity>
+        <activity android:name=".PopupWindowActivity" />
         <activity android:name=".CheckboxActivity" />
         <activity android:name=".EmulatorActivity" />
         <activity android:name=".OaidActivity" />
@@ -44,7 +40,13 @@
         <activity android:name=".LikeAnimActivity" />
         <activity android:name=".FireAnimActivity" />
         <activity android:name=".FrameAnimActivity" />
-        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".ConstraintLayoutActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
@@ -57,7 +59,9 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LottieActivity" />
+        <activity android:name=".LottieActivity">
+
+        </activity>
         <activity android:name=".modleviewer.ModelViewerActivity" />
         <activity android:name=".OpenGLES20Activity" />
         <activity android:name=".OpenGLActivity" />
