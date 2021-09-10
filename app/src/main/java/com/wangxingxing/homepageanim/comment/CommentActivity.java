@@ -45,11 +45,14 @@ public class CommentActivity extends AppCompatActivity {
         mNodeAdapter.setOnItemChildClickListener(new OnItemChildClickListener() {
             @Override
             public void onItemChildClick(@NonNull BaseQuickAdapter adapter, @NonNull View view, int position) {
+                LogUtils.i("position=" + position);
                 switch (view.getId()) {
                     case R.id.tv_footer:
                         LogUtils.i("加载更多");
-                        mNodeAdapter.nodeAddData(mNodeAdapter.getData().get(1), 5, getAddData());
-//                        mNodeAdapter.notifyDataSetChanged();
+                        //获取父节点添加数据
+                        RootFooterNode footerNode = (RootFooterNode)mNodeAdapter.getData().get(position);
+                        RootNode rootNode = (RootNode) mNodeAdapter.getData().get(footerNode.getFirstNodeIndex());
+                        mNodeAdapter.nodeAddData(rootNode, 5, getAddData());
                         break;
                 }
             }
@@ -67,7 +70,7 @@ public class CommentActivity extends AppCompatActivity {
                 itemNodeList.add(node);
             }
 
-            RootNode entity = new RootNode(itemNodeList, "parent item - " + i);
+            RootNode entity = new RootNode(itemNodeList, "parent item - " + i, 0);
             mData.add(entity);
         }
         return mData;

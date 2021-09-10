@@ -9,13 +9,19 @@ import java.util.List;
 public class RootFooterNode extends BaseNode {
 
     private String title;
+    private int firstNodeIndex;
 
-    public RootFooterNode(String title) {
+    public RootFooterNode(String title, int firstNodeIndex) {
         this.title = title;
+        this.firstNodeIndex = firstNodeIndex;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public int getFirstNodeIndex() {
+        return firstNodeIndex;
     }
 
     @Nullable

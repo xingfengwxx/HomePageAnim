@@ -18,9 +18,12 @@ public class RootNode extends BaseNode implements NodeFooterImp {
     private List<BaseNode> childNode;
     private String title;
 
-    public RootNode(List<BaseNode> childNode, String title) {
+    private int firstNodeIndex;
+
+    public RootNode(List<BaseNode> childNode, String title, int firstNodeIndex) {
         this.childNode = childNode;
         this.title = title;
+        this.firstNodeIndex = firstNodeIndex;
     }
 
     public String getTitle() {
@@ -47,7 +50,7 @@ public class RootNode extends BaseNode implements NodeFooterImp {
     @Nullable
     @Override
     public BaseNode getFooterNode() {
-        return new RootFooterNode("显示更多...");
+        return new RootFooterNode("显示更多...", firstNodeIndex);
     }
 
     public void addNode(List<BaseNode> childNode) {

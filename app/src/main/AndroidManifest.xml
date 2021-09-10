@@ -26,16 +26,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".comment.CommentActivity">
+        <activity android:name=".multitype.TikTokCommentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".comment.CommentActivity">
+
+        </activity>
         <activity
             android:name=".ChipGroupActivity"
-            android:theme="@style/MyChipTheme"></activity>
+            android:theme="@style/MyChipTheme" />
         <activity android:name=".ClickAreaActivity" />
         <activity android:name=".recycleview.RecyclerViewActivity" />
         <activity android:name=".PopupWindowActivity" />
@@ -46,9 +49,7 @@
         <activity android:name=".LikeAnimActivity" />
         <activity android:name=".FireAnimActivity" />
         <activity android:name=".FrameAnimActivity" />
-        <activity android:name=".ConstraintLayoutActivity">
-
-        </activity>
+        <activity android:name=".ConstraintLayoutActivity"></activity>
         <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
@@ -61,7 +62,7 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LottieActivity"></activity>
+        <activity android:name=".LottieActivity" />
         <activity android:name=".modleviewer.ModelViewerActivity" />
         <activity android:name=".OpenGLES20Activity" />
         <activity android:name=".OpenGLActivity" />
