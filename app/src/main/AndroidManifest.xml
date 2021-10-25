@@ -26,16 +26,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".multitype.TikTokCommentActivity">
+        <activity android:name=".banner.BannerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".comment.CommentActivity">
-
+        <activity android:name=".ImageActivity">
         </activity>
+        <activity android:name=".multitype.TikTokCommentActivity"></activity>
+        <activity android:name=".comment.CommentActivity" />
         <activity
             android:name=".ChipGroupActivity"
             android:theme="@style/MyChipTheme" />
@@ -49,7 +50,7 @@
         <activity android:name=".LikeAnimActivity" />
         <activity android:name=".FireAnimActivity" />
         <activity android:name=".FrameAnimActivity" />
-        <activity android:name=".ConstraintLayoutActivity"></activity>
+        <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".WindowActivity" />
         <activity android:name=".flex.TagActivity" />
         <activity android:name=".flex.FlexActivity" />
