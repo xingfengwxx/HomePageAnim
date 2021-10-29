@@ -27,11 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".banner.BannerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ImageActivity">
         </activity>
@@ -58,7 +54,13 @@
         <activity
             android:name=".X5WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".imageviewer.ImageViewerActivity" />
+        <activity android:name=".imageviewer.ImageViewerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
