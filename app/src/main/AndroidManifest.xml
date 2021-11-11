@@ -26,12 +26,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".banner.BannerActivity">
+        <activity android:name=".thumbnail.ThumbnailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".ImageActivity">
-        </activity>
-        <activity android:name=".multitype.TikTokCommentActivity"></activity>
+        <activity android:name=".banner.BannerActivity"></activity>
+        <activity android:name=".ImageActivity"></activity>
+        <activity android:name=".multitype.TikTokCommentActivity" />
         <activity android:name=".comment.CommentActivity" />
         <activity
             android:name=".ChipGroupActivity"
@@ -54,12 +58,8 @@
         <activity
             android:name=".X5WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".imageviewer.ImageViewerActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".imageviewer.ImageViewerActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ScrollingActivity"

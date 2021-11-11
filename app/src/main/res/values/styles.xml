@@ -45,4 +45,14 @@
 
     </style>
 
+    <style name="UploadProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--进度条的进度颜色drawable文件-->
+        <item name="android:progressDrawable">@drawable/progress_upload</item>
+        <!--进度条的最小高度-->
+        <item name="android:minHeight">2dp</item>
+        <!--进度条的最大高度-->
+        <item name="android:maxHeight">2dp</item>
+    </style>
+
 </resources>
