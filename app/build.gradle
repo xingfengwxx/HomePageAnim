@@ -154,5 +154,8 @@ dependencies {
     //PhotoView
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 
+    //xCrash
+    implementation 'com.iqiyi.xcrash:xcrash-android-lib:3.0.0'
+
 
 }

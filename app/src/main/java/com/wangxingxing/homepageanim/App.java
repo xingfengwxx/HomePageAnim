@@ -1,6 +1,7 @@
 package com.wangxingxing.homepageanim;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.LogUtils;
@@ -27,6 +28,12 @@ public class App extends Application {
         ARouter.openLog();
         ARouter.openDebug();
         ARouter.init(this);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        xcrash.XCrash.init(this);
     }
 
     private void initLog() {

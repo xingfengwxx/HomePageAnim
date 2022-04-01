@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.wangxingxing.homepageanim.databinding.ActivityHelperBinding;
 
@@ -45,5 +46,12 @@ public class HelperActivity extends AppCompatActivity {
                 mAdapter.setEmptyView(R.layout.empty_helper);
             }
         }, 1000);
+
+        mBinding.btnCrash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                throw new NullPointerException("TEST");
+            }
+        });
     }
 }
