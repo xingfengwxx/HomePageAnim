@@ -26,17 +26,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelperActivity">
-
+        <activity
+            android:name=".HeaderActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".thumbnail.ThumbnailActivity">
-
+        <activity android:name=".HelperActivity">
         </activity>
+        <activity android:name=".thumbnail.ThumbnailActivity"></activity>
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".ImageActivity" />
         <activity android:name=".multitype.TikTokCommentActivity" />
@@ -62,7 +63,7 @@
         <activity
             android:name=".X5WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".imageviewer.ImageViewerActivity"></activity>
+        <activity android:name=".imageviewer.ImageViewerActivity" />
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
