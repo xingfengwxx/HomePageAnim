@@ -27,17 +27,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HeaderActivity"
-            android:exported="true">
+            android:name=".MultiActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelperActivity">
+        <activity
+            android:name=".HeaderActivity"
+            android:exported="true">
+
         </activity>
-        <activity android:name=".thumbnail.ThumbnailActivity"></activity>
+        <activity android:name=".HelperActivity"></activity>
+        <activity android:name=".thumbnail.ThumbnailActivity" />
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".ImageActivity" />
         <activity android:name=".multitype.TikTokCommentActivity" />
