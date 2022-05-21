@@ -102,7 +102,7 @@ public class LottieActivity extends AppCompatActivity {
         if (!PermissionUtils.isGranted(permissions)) {
             PermissionUtils.permission(permissions).request();
         } else {
-            getVideoInfo();
+//            getVideoInfo();
         }
     }
 
