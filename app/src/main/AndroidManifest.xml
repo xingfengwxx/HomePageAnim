@@ -27,16 +27,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MultiActivity"
-            android:exported="true" >
+            android:name=".GsonActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".KTTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiActivity"
+            android:exported="true" />
+        <activity
             android:name=".HeaderActivity"
-            android:exported="true">
-
-        </activity>
-        <activity android:name=".HelperActivity"></activity>
+            android:exported="true" />
+        <activity android:name=".HelperActivity" />
         <activity android:name=".thumbnail.ThumbnailActivity" />
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".ImageActivity" />
@@ -68,12 +75,8 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LottieActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LottieActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".modleviewer.ModelViewerActivity" />
         <activity android:name=".OpenGLES20Activity" />

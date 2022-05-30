@@ -61,6 +61,7 @@ public class TestActivity extends AppCompatActivity {
 //                startActivity(new Intent(TestActivity.this, OpenGLActivity.class));
 //            }
 //        });
+
     }
 
     private void btnAnim() {
