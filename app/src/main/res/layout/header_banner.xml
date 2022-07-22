@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view_2" />
+        app:layout_constraintTop_toBottomOf="@id/view_2"
+        app:banner_indicator_marginBottom="50dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

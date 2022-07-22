@@ -28,11 +28,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".CountDownTimerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".GsonActivity">
 
@@ -48,7 +44,13 @@
             android:exported="true" />
         <activity android:name=".HelperActivity" />
         <activity android:name=".thumbnail.ThumbnailActivity" />
-        <activity android:name=".banner.BannerActivity" />
+        <activity android:name=".banner.BannerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ImageActivity" />
         <activity android:name=".multitype.TikTokCommentActivity" />
         <activity android:name=".comment.CommentActivity" />
