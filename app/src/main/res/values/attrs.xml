@@ -133,13 +133,13 @@
         <attr name="etv_fold_line" format="integer" />
         <attr name="etv_fold_src" format="reference" />
         <attr name="etv_expand_src" format="reference" />
-        <attr name="etv_img_padding" format="dimension"/>
-        <attr name="etv_text_color" format="color"/>
-        <attr name="etv_text_size" format="dimension"/>
-        <attr name="etv_text" format="reference|string"/>
+        <attr name="etv_img_padding" format="dimension" />
+        <attr name="etv_text_color" format="color" />
+        <attr name="etv_text_size" format="dimension" />
+        <attr name="etv_text" format="reference|string" />
     </declare-styleable>
     <declare-styleable name="InterceptConstraintLayout">
-        <attr name="android:orientation"/>
+        <attr name="android:orientation" />
     </declare-styleable>
 
     <declare-styleable name="ShadowViewGroup">
@@ -179,5 +179,10 @@
             <enum name="rriv_mode_bottom_right" value="9" />
         </attr>
 
+    </declare-styleable>
+    <declare-styleable name="AppWidgetAttrs">
+        <attr name="appWidgetPadding" format="dimension" />
+        <attr name="appWidgetInnerRadius" format="dimension" />
+        <attr name="appWidgetRadius" format="dimension" />
     </declare-styleable>
 </resources>

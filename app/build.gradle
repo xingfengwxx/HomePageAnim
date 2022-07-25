@@ -3,13 +3,12 @@ apply from: 'multiple-channel.gradle'
 apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.1"
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.wangxingxing.homepageanim"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 100
         versionName "1.0.0"
 
@@ -49,6 +48,9 @@ android {
             storePassword 'wxx123321'
             keyPassword 'wxx123321'
         }
+    }
+    buildFeatures {
+        viewBinding true
     }
 
     buildTypes {
@@ -158,5 +160,16 @@ dependencies {
     //xCrash
     implementation 'com.iqiyi.xcrash:xcrash-android-lib:3.0.0'
 
+
+    // For traditional RemoteViews
+    implementation "androidx.core:core-remoteviews:1.0.0-alpha03"
+    // For building appwidgets with Glance
+    implementation "androidx.glance:glance-appwidget:1.0.0-alpha03"
+    // To use Material3 theming for widgets
+//    implementation 'com.google.android.material:material:1.7.0-alpha02'
+    // Recommended to use WorkManager to load data for widgets
+//    implementation "androidx.work:work-runtime-ktx:2.7.1"
+    // To load images
+    implementation("io.coil-kt:coil:2.1.0")
 
 }

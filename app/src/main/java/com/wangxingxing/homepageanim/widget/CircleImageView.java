@@ -1,4 +1,4 @@
-package com.wangxingxing.homepageanim.weight;
+package com.wangxingxing.homepageanim.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

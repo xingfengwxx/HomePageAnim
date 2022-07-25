@@ -1,4 +1,4 @@
-package com.wangxingxing.homepageanim.weight;
+package com.wangxingxing.homepageanim.widget;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -11,7 +11,6 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.graphics.Point;
-import android.graphics.PointF;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
@@ -22,7 +21,6 @@ import com.wangxingxing.homepageanim.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * author : 王星星

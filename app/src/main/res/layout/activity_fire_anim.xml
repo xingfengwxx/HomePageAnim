@@ -14,7 +14,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="start"/>
 
-    <com.wangxingxing.homepageanim.weight.BezierView
+    <com.wangxingxing.homepageanim.widget.BezierView
         android:id="@+id/bezier_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

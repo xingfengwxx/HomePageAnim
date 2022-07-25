@@ -9,7 +9,7 @@ import com.blankj.utilcode.util.ConvertUtils;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.wangxingxing.homepageanim.weight.RoundedCornersTransform;
+import com.wangxingxing.homepageanim.widget.RoundedCornersTransform;
 
 public class RoundImageActivity extends AppCompatActivity {
 

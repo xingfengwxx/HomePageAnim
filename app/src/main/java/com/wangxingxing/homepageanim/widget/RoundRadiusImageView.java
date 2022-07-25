@@ -1,4 +1,4 @@
-package com.wangxingxing.homepageanim.weight;
+package com.wangxingxing.homepageanim.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;

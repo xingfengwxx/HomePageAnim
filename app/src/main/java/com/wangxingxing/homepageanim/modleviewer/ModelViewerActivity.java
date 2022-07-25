@@ -2,40 +2,26 @@ package com.wangxingxing.homepageanim.modleviewer;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.blankj.utilcode.util.BarUtils;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.PermissionUtils;
 import com.blankj.utilcode.util.ResourceUtils;
 import com.blankj.utilcode.util.ScreenUtils;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.MultiTransformation;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.request.RequestOptions;
-import com.makeramen.roundedimageview.RoundedImageView;
 import com.sofakingforever.stars.AnimatedStarsView;
 import com.wangxingxing.homepageanim.R;
 import com.wangxingxing.homepageanim.recycleview.CircleRecyclerView;
 import com.wangxingxing.homepageanim.recycleview.CircleRecyclerViewAdapter;
 import com.wangxingxing.homepageanim.recycleview.CircularViewMode;
 import com.wangxingxing.homepageanim.recycleview.UserInfoBean;
-import com.wangxingxing.homepageanim.weight.CircleImageView;
 
 import org.andresoviedo.android_3d_model_engine.camera.CameraController;
 import org.andresoviedo.android_3d_model_engine.collision.CollisionController;
@@ -52,13 +38,9 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
-
-import jp.wasabeef.glide.transformations.BitmapTransformation;
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class ModelViewerActivity extends Activity implements EventListener {
 

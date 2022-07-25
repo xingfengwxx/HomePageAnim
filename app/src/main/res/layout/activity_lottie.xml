@@ -56,7 +56,7 @@
         app:layout_constraintLeft_toRightOf="@id/iv_gif_glide"
         app:layout_constraintBottom_toTopOf="@id/lgv"/>
 
-    <com.wangxingxing.homepageanim.weight.LinearGradientView
+    <com.wangxingxing.homepageanim.widget.LinearGradientView
         android:id="@+id/lgv"
         android:layout_width="300dp"
         android:layout_height="100dp"

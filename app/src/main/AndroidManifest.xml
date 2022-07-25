@@ -26,13 +26,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".CountDownTimerActivity">
+        <receiver
+            android:name=".TodoWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
 
-        </activity>
-        <activity android:name=".GsonActivity">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/todo_widget_info" />
+        </receiver>
 
+        <activity android:name=".AppWidgetActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".CountDownTimerActivity" />
+        <activity android:name=".GsonActivity" />
         <activity
             android:name=".KTTestActivity"
             android:exported="false" />
@@ -44,13 +58,7 @@
             android:exported="true" />
         <activity android:name=".HelperActivity" />
         <activity android:name=".thumbnail.ThumbnailActivity" />
-        <activity android:name=".banner.BannerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".banner.BannerActivity"></activity>
         <activity android:name=".ImageActivity" />
         <activity android:name=".multitype.TikTokCommentActivity" />
         <activity android:name=".comment.CommentActivity" />
@@ -80,7 +88,7 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LottieActivity"></activity>
+        <activity android:name=".LottieActivity" />
         <activity android:name=".modleviewer.ModelViewerActivity" />
         <activity android:name=".OpenGLES20Activity" />
         <activity android:name=".OpenGLActivity" />

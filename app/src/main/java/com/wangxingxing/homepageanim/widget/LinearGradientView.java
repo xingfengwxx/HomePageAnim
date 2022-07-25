@@ -1,20 +1,16 @@
-package com.wangxingxing.homepageanim.weight;
+package com.wangxingxing.homepageanim.widget;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
-import android.graphics.Shader.TileMode;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-
-import com.wangxingxing.homepageanim.R;
 
 /**
  * author : 王星星
